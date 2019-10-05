@@ -1,0 +1,76 @@
+img#index_image{
+    /*max-width: 40%;*/
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+    max-height: 50vh;
+}
+
+.login_info, .login_title{
+    text-align: center;
+}
+
+.login_title{
+    margin: 20px;
+}
+
+.login_info{
+    font-size: 18px;
+}
+
+button[type="submit"]{
+    margin-left: 10px;
+    float: right;
+}
+
+
+.message{
+    text-align: center;
+    font-size: 18px;
+    padding: 8px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+textarea::placeholder{
+    font-size: 16px;
+}
+
+.ideas_header{
+    text-align: center;
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+
+i{
+    user-select: none;
+}
+
+.card-tag{
+    font-size: 18px;
+    color: orange;
+    text-align: center;
+}
+
+.idea{
+}
+/*
+.idea{
+    border: 1px solid orange;
+}
+
+.idea .title{
+
+}
+
+.idea .tag{
+
+}
+
+.idea .text{
+
+}*/

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %}მთავარი{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <form id="form" method="POST" action="/save_idea">
+        <input type="text" name="title" placeholder="ახალი იდეის სათაური">
+        <input type="text" name="tag" placeholder="კატეგორია">
+        <textarea name="text" placeholder="იდეის სრული აღწერა" form="form"></textarea>
+        <a class="btn-floating blue darken-2" onclick="document.querySelector('form').submit()"><i class="material-icons">send</i></a>
+        <!-- <a class="btn-floating green darken-2" onclick="location.reload()"><i class="material-icons">autorenew</i></a> -->
+    </form>
+
+    <p class="blue darken-3 white-text ideas_header">შენახული იდეები</p>
+    <div class="row">
+        {% for idea in ideas %}
+        <div class="idea col s6 m4">
+            <div class="card green darken-2 white-text">
+                <div class="card-content">
+                    <p class="card-tag">{{ idea.tag }}</p>
+                    <hr>
+                    <p class="card-title">{{ idea.title }}</p>
+                    <p class="text">{{ idea.text }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

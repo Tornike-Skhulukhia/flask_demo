@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}რეგისტრაცია{% endblock title %}
+
+{% block content %}
+<a href="/"><h5 class="blue-text text-darken-4 login_title">მოგესალმება შენი იდეების ლაბორატორია</h5></a>
+<img src="/static/img/numbers.jpeg" id="index_image">
+<p class="blue-text text-darken-4 login_info">რეგისტრაცია</p>
+<div class="container">
+    <form method="POST" action="/register">
+        <input type="text" name="username" placeholder="მომხმარებლის სახელი" required>
+        <input type="password" name="password" placeholder="მომხმარებლის პაროლი" required>
+       <button type="submit"  class="btn-large green darken-4">რეგისტრაცია</button>
+    </form>
+</div>
+{% endblock content %}

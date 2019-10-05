@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>| {% block title %}{% endblock title %}| შენი იდეების ლაბორატორია |</title>
+    <link rel="icon" type="image/x-icon" href="https://finder.ge/static/img/design_small_images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+        <p class="green white-text message">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock content %}
+</body>
+</html>

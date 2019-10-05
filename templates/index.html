@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}ავტორიზაცია{% endblock title %}
+
+{% block content %}
+<a href="/"><h5 class="blue-text text-darken-4 login_title">მოგესალმება შენი იდეების ლაბორატორია</h5></a>
+<img src="/static/img/lock.jpeg" id="index_image">
+<p class="blue-text text-darken-4 login_info">გასაგრძელებლად, გაიარე ავტორიზაცია, ან <a href="/register" class="purple-text text-darken-1">დარეგისტრირდი</a></p>
+<div class="container">
+    <form method="POST" action="/">
+        <input type="text" name="username" placeholder="მომხმარებლის სახელი" required>
+        <input type="password" name="password" placeholder="მომხმარებლის პაროლი" required>
+       <button type="submit"  class="btn-large green darken-4">შესვლა</button>
+    </form>
+</div>
+{% endblock content %}
