@@ -1,6 +1,2 @@
 {"username": "თორნიკე", "password": "123"}
-{"username": "123", "password": "c"}
-{"username": "1212", "password": "ასდასდ"}
-{"username": "თორნიკ_1", "password": "1233"}
-{"username": "Mariami", "password": "123"}
-{"username": "mariami", "password": "123"}
+
